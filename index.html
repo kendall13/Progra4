@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+       <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+       <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+       <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    </head>
+    <body>
+       <div id="elDiv"></div>
+        <div id="elDiv2"></div>
+        <div id="elDiv3"></div>
+        <script type="text/babel">
+        ReactDOM.render(<h2>Hola carepichas!!</h2>, document.getElementById("elDiv"));
+
+        const elNombre= "Pepe paleta";
+        const unElemento= <h1>Hola, {elNombre}</h1>;
+
+        ReactDOM.render(unElemento, document.getElementById("elDiv2"));
+
+//----------------------------------------------------------------------------------------------------
+        class HolaClase extends React.Component{
+            render(){
+                return <h1>Jelouuuuu</h1>;
+            }
+        }
+        ReactDOM.render(<HolaClase />, document.getElementById("elDiv3"));
+        
+
+        </script>
+    </body>
+</html>
+<!--
+
+    [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
+    [::::::::::::::      ::::::::::::::]
+    [::::::::::::::      ::::::::::::::]
+    [::::::[[[[[[[:      :]]]]]]]::::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[     CODE THE WEB     ]:::::]
+    [:::::[  http://brackets.io  ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [::::::[[[[[[[:      :]]]]]]]::::::]
+    [::::::::::::::      ::::::::::::::]
+    [::::::::::::::      ::::::::::::::]
+    [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
+
+-->
