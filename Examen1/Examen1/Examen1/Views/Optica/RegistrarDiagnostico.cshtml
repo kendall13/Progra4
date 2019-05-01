@@ -1,0 +1,150 @@
+﻿@model Examen1.Models.ModeloDiagnosticos
+
+@{
+    ViewData["Title"] = "RegistrarDiagnostico";
+}
+
+<h2>RegistrarDiagnostico</h2>
+
+<h4>ModeloDiagnosticos</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="RegistrarDiagnostico">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="nombre_paciente" class="control-label"></label>
+                <input asp-for="nombre_paciente" class="form-control" />
+                <span asp-validation-for="nombre_paciente" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="numero_consulta" class="control-label"></label>
+                <input asp-for="numero_consulta" class="form-control" />
+                <span asp-validation-for="numero_consulta" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="telefono_paciente" class="control-label"></label>
+                <input asp-for="telefono_paciente" class="form-control" />
+                <span asp-validation-for="telefono_paciente" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="doctor_encargado" class="control-label"></label>
+                <input asp-for="doctor_encargado" class="form-control" />
+                <span asp-validation-for="doctor_encargado" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="tipo_lente" class="control-label"></label>
+                <input asp-for="tipo_lente" class="form-control" />
+                <span asp-validation-for="tipo_lente" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="fecha_examen" class="control-label"></label>
+                <input asp-for="fecha_examen" class="form-control" />
+                <span asp-validation-for="fecha_examen" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="fecha_proximo_examen" class="control-label"></label>
+                <input asp-for="fecha_proximo_examen" class="form-control" />
+                <span asp-validation-for="fecha_proximo_examen" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="estado_receta" class="control-label"></label>
+                <input asp-for="estado_receta" class="form-control" />
+                <span asp-validation-for="estado_receta" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="oi_SPH" class="control-label"></label>
+                <input asp-for="oi_SPH" class="form-control" />
+                <span asp-validation-for="oi_SPH" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="oi_CYL" class="control-label"></label>
+                <input asp-for="oi_CYL" class="form-control" />
+                <span asp-validation-for="oi_CYL" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="oi_EJE" class="control-label"></label>
+                <input asp-for="oi_EJE" class="form-control" />
+                <span asp-validation-for="oi_EJE" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="oi_DP" class="control-label"></label>
+                <input asp-for="oi_DP" class="form-control" />
+                <span asp-validation-for="oi_DP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="oi_ADD" class="control-label"></label>
+                <input asp-for="oi_ADD" class="form-control" />
+                <span asp-validation-for="oi_ADD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="oi_PRISMA" class="control-label"></label>
+                <input asp-for="oi_PRISMA" class="form-control" />
+                <span asp-validation-for="oi_PRISMA" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="oi_BASE" class="control-label"></label>
+                <input asp-for="oi_BASE" class="form-control" />
+                <span asp-validation-for="oi_BASE" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="od_SPH" class="control-label"></label>
+                <input asp-for="od_SPH" class="form-control" />
+                <span asp-validation-for="od_SPH" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="od_CYL" class="control-label"></label>
+                <input asp-for="od_CYL" class="form-control" />
+                <span asp-validation-for="od_CYL" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="od_EJE" class="control-label"></label>
+                <input asp-for="od_EJE" class="form-control" />
+                <span asp-validation-for="od_EJE" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="od_DP" class="control-label"></label>
+                <input asp-for="od_DP" class="form-control" />
+                <span asp-validation-for="od_DP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="od_ADD" class="control-label"></label>
+                <input asp-for="od_ADD" class="form-control" />
+                <span asp-validation-for="od_ADD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="od_PRISMA" class="control-label"></label>
+                <input asp-for="od_PRISMA" class="form-control" />
+                <span asp-validation-for="od_PRISMA" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="od_BASE" class="control-label"></label>
+                <input asp-for="od_BASE" class="form-control" />
+                <span asp-validation-for="od_BASE" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="altura_od" class="control-label"></label>
+                <input asp-for="altura_od" class="form-control" />
+                <span asp-validation-for="altura_od" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="altura_oi" class="control-label"></label>
+                <input asp-for="altura_oi" class="form-control" />
+                <span asp-validation-for="altura_oi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="diagnostico" class="control-label"></label>
+                <input asp-for="diagnostico" class="form-control" />
+                <span asp-validation-for="diagnostico" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

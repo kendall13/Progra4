@@ -1,0 +1,175 @@
+﻿@model IEnumerable<Examen1.Models.ModeloDiagnosticos>
+
+@{
+    ViewData["Title"] = "Cons_Diagnostico";
+}
+
+<h2>Cons_Diagnostico</h2>
+
+<p>
+    <a asp-action="RegistrarDiagnostico">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.nombre_paciente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.numero_consulta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.telefono_paciente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.doctor_encargado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tipo_lente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fecha_examen)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fecha_proximo_examen)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.estado_receta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.oi_SPH)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.oi_CYL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.oi_EJE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.oi_DP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.oi_ADD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.oi_PRISMA)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.oi_BASE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.od_SPH)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.od_CYL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.od_EJE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.od_DP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.od_ADD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.od_PRISMA)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.od_BASE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.altura_od)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.altura_oi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.diagnostico)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombre_paciente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.numero_consulta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.telefono_paciente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.doctor_encargado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tipo_lente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fecha_examen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fecha_proximo_examen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.estado_receta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.oi_SPH)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.oi_CYL)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.oi_EJE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.oi_DP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.oi_ADD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.oi_PRISMA)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.oi_BASE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.od_SPH)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.od_CYL)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.od_EJE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.od_DP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.od_ADD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.od_PRISMA)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.od_BASE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.altura_od)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.altura_oi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.diagnostico)
+            </td>
+           
+        </tr>
+}
+    </tbody>
+</table>
