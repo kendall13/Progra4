@@ -1,0 +1,71 @@
+﻿@using PagedList.Mvc;
+@model PagedList.IPagedList<Fidelitas.NoSql.PrimerEjemplo.Collections.Animales>
+
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Bienvenido a la veterinaria Better Inaria</h2>
+<br>
+
+
+@using (Html.BeginForm())
+{
+    <p>
+        Buscar poro nombre de Animal: @Html.TextBox("SearchString")
+        <input type="submit" value="Search" />
+    </p>
+}
+<table class="table">
+    <tr>
+        <th>Tratamientos</th>
+        <th>
+            @Html.DisplayName("Nombre")
+        </th>
+        <th>
+            @Html.DisplayName("Fecha")
+        </th>
+        <th>
+            @Html.DisplayName("Tipo")
+        </th>
+        <th>
+            @Html.DisplayName("Dueño")
+        </th>
+        <th>
+            @Html.DisplayName("Peso")
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.ActionLink("Ver Tratamientos", "LosTratamientos", new { id = item._id.ToString() }) 
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+                @Html.HiddenFor(modelItem => item.tratamiento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fecha)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tipo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dueno)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Peso)
+            </td>
+        </tr>
+    }
+
+</table>
+<br />
+Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+
+@Html.PagedListPager(Model, page => Url.Action("Index",
+    new { page, currentFilter = ViewBag.CurrentFilter }))
