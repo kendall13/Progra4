@@ -1,0 +1,10 @@
+C:\Users\ivonn\source\repos\Quices\Malespin\bin\Debug\Malespin.exe.config
+C:\Users\ivonn\source\repos\Quices\Malespin\bin\Debug\Malespin.exe
+C:\Users\ivonn\source\repos\Quices\Malespin\bin\Debug\Malespin.pdb
+C:\Users\ivonn\source\repos\Quices\Malespin\obj\Debug\Malespin.csprojAssemblyReference.cache
+C:\Users\ivonn\source\repos\Quices\Malespin\obj\Debug\Malespin.Malespin.resources
+C:\Users\ivonn\source\repos\Quices\Malespin\obj\Debug\Malespin.Properties.Resources.resources
+C:\Users\ivonn\source\repos\Quices\Malespin\obj\Debug\Malespin.csproj.GenerateResource.cache
+C:\Users\ivonn\source\repos\Quices\Malespin\obj\Debug\Malespin.csproj.CoreCompileInputs.cache
+C:\Users\ivonn\source\repos\Quices\Malespin\obj\Debug\Malespin.exe
+C:\Users\ivonn\source\repos\Quices\Malespin\obj\Debug\Malespin.pdb

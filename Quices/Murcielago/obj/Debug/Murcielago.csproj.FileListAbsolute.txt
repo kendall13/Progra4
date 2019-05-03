@@ -1,0 +1,10 @@
+C:\Users\ivonn\source\repos\Quices\Murcielago\bin\Debug\Murcielago.exe.config
+C:\Users\ivonn\source\repos\Quices\Murcielago\bin\Debug\Murcielago.exe
+C:\Users\ivonn\source\repos\Quices\Murcielago\bin\Debug\Murcielago.pdb
+C:\Users\ivonn\source\repos\Quices\Murcielago\obj\Debug\Murcielago.csprojAssemblyReference.cache
+C:\Users\ivonn\source\repos\Quices\Murcielago\obj\Debug\Murcielago.Murcielago.resources
+C:\Users\ivonn\source\repos\Quices\Murcielago\obj\Debug\Murcielago.Properties.Resources.resources
+C:\Users\ivonn\source\repos\Quices\Murcielago\obj\Debug\Murcielago.csproj.GenerateResource.cache
+C:\Users\ivonn\source\repos\Quices\Murcielago\obj\Debug\Murcielago.csproj.CoreCompileInputs.cache
+C:\Users\ivonn\source\repos\Quices\Murcielago\obj\Debug\Murcielago.exe
+C:\Users\ivonn\source\repos\Quices\Murcielago\obj\Debug\Murcielago.pdb

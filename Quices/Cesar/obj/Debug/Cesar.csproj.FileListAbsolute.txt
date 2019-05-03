@@ -1,0 +1,9 @@
+C:\Users\ivonn\source\repos\Quices\Cesar\bin\Debug\Cesar.exe.config
+C:\Users\ivonn\source\repos\Quices\Cesar\bin\Debug\Cesar.exe
+C:\Users\ivonn\source\repos\Quices\Cesar\bin\Debug\Cesar.pdb
+C:\Users\ivonn\source\repos\Quices\Cesar\obj\Debug\Cesar.Cesar.resources
+C:\Users\ivonn\source\repos\Quices\Cesar\obj\Debug\Cesar.Properties.Resources.resources
+C:\Users\ivonn\source\repos\Quices\Cesar\obj\Debug\Cesar.csproj.GenerateResource.cache
+C:\Users\ivonn\source\repos\Quices\Cesar\obj\Debug\Cesar.csproj.CoreCompileInputs.cache
+C:\Users\ivonn\source\repos\Quices\Cesar\obj\Debug\Cesar.exe
+C:\Users\ivonn\source\repos\Quices\Cesar\obj\Debug\Cesar.pdb
