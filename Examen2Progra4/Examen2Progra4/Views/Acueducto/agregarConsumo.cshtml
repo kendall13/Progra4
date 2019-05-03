@@ -1,0 +1,48 @@
+﻿@model Examen2Progra4.Models.Consumo
+
+@{
+    ViewData["Title"] = "agregarConsumo";
+}
+
+<h2>agregarConsumo</h2>
+
+<h4>Consumo</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="agregarConsumo">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="mesU" class="control-label"></label>
+                <input asp-for="mesU" class="form-control" />
+                <span asp-validation-for="mesU" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="anoU" class="control-label"></label>
+                <input asp-for="anoU" class="form-control" />
+                <span asp-validation-for="anoU" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="consumoU" class="control-label"></label>
+                <input asp-for="consumoU" class="form-control" />
+                <span asp-validation-for="consumoU" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="cedulaU" class="control-label"></label>
+                <input asp-for="cedulaU" class="form-control" />
+                <span asp-validation-for="cedulaU" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

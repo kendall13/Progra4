@@ -1,0 +1,66 @@
+﻿@model IEnumerable<Examen2Progra4.Models.Consumo>
+
+@{
+    ViewData["Title"] = "pagarConsumo";
+}
+
+<h2>pagarConsumo</h2>
+@using (Html.BeginForm("pagarConsumo","Acueducto"))
+{
+    <p>
+        Find by name: @Html.TextBox("cedula")
+        <input type="submit" value="search" />
+    </p>
+}
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.mesU)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.anoU)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.consumoU)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cedulaU)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.pagoU)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.mesU)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.anoU)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.consumoU)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.cedulaU)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.pagoU)
+    </td>
+    <td>
+        @Html.ActionLink("Pagar", "Pagar","Acueducto", new {mesU=item.mesU,anoU=item.anoU, cedula=item.cedulaU },null) |
+        @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+        @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+    </td>
+</tr>
+}
+    </tbody>
+</table>

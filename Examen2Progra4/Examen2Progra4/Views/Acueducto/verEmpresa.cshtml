@@ -1,0 +1,60 @@
+﻿@model Examen2Progra4.Models.Empresa
+
+@{
+    ViewData["Title"] = "verEmpresa";
+}
+
+<h2>verEmpresa</h2>
+
+<div>
+    <h4>Empresa</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.titulo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.titulo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.costo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.costo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.baseDomiciliar)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.baseDomiciliar)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.baseEmpresarial)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.baseEmpresarial)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaCobro)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.fechaCobro)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaCorte)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.fechaCorte)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.multa)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.multa)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>
